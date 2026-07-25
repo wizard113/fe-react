@@ -22,13 +22,6 @@ function App() {
             <li>BLOB_URL : {import.meta.env.VITE_BLOB_URL ?? '(not set)'}</li>
           </ol>
         </div>
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
       </section>
 
       <div className="ticks"></div>
