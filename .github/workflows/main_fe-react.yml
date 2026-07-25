@@ -22,6 +22,11 @@ jobs:
           cache: npm
 
       - name: Install and build
+        env:
+          # 왼쪽 이름은 코드의 import.meta.env.VITE_* 와 반드시 일치해야 함
+          # 오른쪽 secrets.* 는 이 repo 에 등록된 실제 secret 이름으로 맞출 것
+          VITE_API_URL: ${{ secrets.API_URL }}
+          VITE_BLOB_URL: ${{ secrets.BLOB_URL }}
         run: |
           npm ci
           npm run build

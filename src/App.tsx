@@ -15,8 +15,8 @@ function App() {
         <div>
           <h1>React: 앱서비스 배포 테스트</h1>
           <ol>
-            <li>API_URL : {import.meta.env.VITE_API_URL ?? '(not set)'}</li>
-            <li>BLOB_URL : {import.meta.env.VITE_BLOB_URL ?? '(not set)'}</li>
+            <li>API_URL: {import.meta.env.VITE_API_URL ?? '(할당안됨)'}</li>
+            <li>BLOB_URL: {import.meta.env.VITE_BLOB_URL ?? '(할당안됨)'}</li>
           </ol>
         </div>
       </section>
